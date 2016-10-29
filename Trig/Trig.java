@@ -1,4 +1,4 @@
-pubic class Trig{
+public class Trig{
 	public static double findLength(double A, double a, double B)
 	{
 		/* Law of Sines:
