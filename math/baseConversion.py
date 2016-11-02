@@ -1,3 +1,19 @@
+#Converting to Base 10110010010111001
+>>> int("101010",2)
+42
+>>> int("FEEDBADDAD",16)
+1094910139821
+
+#Converting to other bases from base 10
+def baseN(num,b,numerals="0123456789abcdefghijklmnopqrstuvwxyz"):
+    return ((num == 0) and numerals[0]) or (baseN(num // b, b, numerals).lstrip(numerals[0]) + numerals[num % b])
+
+#>>> baseN(42,2)
+#'101010'
+#>>> baseN(42,2,"ab")
+#'bababa'
+
+#Longer Version
 def baseN(num, base, numerals="0123456789abcdefghijklmnopqrstuvwxyz"):
     """
     Convert any int to base/radix 2-36 string. Special numerals can be used
