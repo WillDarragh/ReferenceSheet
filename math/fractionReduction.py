@@ -15,3 +15,5 @@ print(Fraction('-.125'))
 #-1/8
 print(Fraction('7e-6'))
 #7/1000000
+print(Fraction(0.25))
+#1/4
